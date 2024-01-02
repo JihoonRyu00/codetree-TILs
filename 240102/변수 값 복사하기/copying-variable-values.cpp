@@ -5,5 +5,5 @@ int main() {
     int b=2;
     int c=3;
     a=b=c;
-    cout<<a<<" "<<b<<" "<<c;    return 0;
+    std::cout<<a<<" "<<b<<" "<<c;    return 0;
 }
