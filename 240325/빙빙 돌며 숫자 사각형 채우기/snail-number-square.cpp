@@ -26,6 +26,9 @@ int main() {
         if(arr[r+dr[dir]][c+dc[dir]]!=0){
             dir=(dir+1)%4;
         }
+        if(arr[r+dr[dir]][c+dc[dir]]!=0){
+            break;
+        }
         c+=dc[dir];
         r+=dr[dir];
         arr[r][c]=i;
