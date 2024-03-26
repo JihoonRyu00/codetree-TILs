@@ -9,6 +9,7 @@ int main() {
     int n,m;
     cin>>n>>m;
 
+    //격자 둘레에 값이 1인 센티널
     for(int i=0;i<m+2;i++){
         arr[0][i]=1;
         arr[n+1][i]=1;
@@ -18,12 +19,14 @@ int main() {
         arr[i][m+1]=1;
     }
 
+    //초기방향 0, 초기좌표 (1,1)
     int dir=0;
     int curr=1;
     int curc=1;
     arr[1][1]=1;
     int cnt=0;
     for(int i=2;i<n*m+1;i++){
+        //가는 방향 한 칸 앞이 0이 아니면 방향 전환
         if(arr[curr+dr[dir]][curc+dc[dir]]!=0){
             dir=(dir+1)%4;
         }
