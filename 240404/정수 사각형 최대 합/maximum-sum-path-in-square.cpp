@@ -4,7 +4,7 @@ using namespace std;
 int arr[101][101]={0,};
 int dp[101][101]={0,};
 int do_dp(int r,int c){
-    if((r==1&&c==1)||r==0||c==0) return dp[1][1];
+    if((r==1&&c==1)||r==0||c==0) return dp[r][c];
 
     return dp[r][c]=max(do_dp(r-1,c),do_dp(r,c-1))+arr[r][c];
 }
