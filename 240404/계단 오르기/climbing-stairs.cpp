@@ -6,7 +6,7 @@ int arr[1001]={0,};
 
 int dp(int n){
     if(n==0||n==1||n==2||n==3) return arr[n];
-    if(arr[n]==-1) return arr[n]=(arr[n-2]+arr[n-3])%10007;
+    if(arr[n]==-1) return arr[n]=(dp(n-2)+dp(n-3))%10007;
     return arr[n];
     
 }
