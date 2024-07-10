@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
-    cout<<"97 - 13 = 84";
+    int a=97, b=13;
+    cout<<a<<" - "<<b<<" = "<<a+b;
     return 0;
 }
