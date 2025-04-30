@@ -1,15 +1,15 @@
 arr=list(map(int,input().split()))
 ans=[]
 while arr:
-    # if arr[-1]==0:
-    #     ans=[]
-    # else:
-    #     ans.append(arr.pop())
-    x=arr.pop()
-    if x==0:
+    if arr[-1]==0:
         ans=[]
     else:
-        ans.append(x)
+        ans.append(arr.pop())
+    # x=arr.pop()
+    # if x==0:
+    #     ans=[]
+    # else:
+    #     ans.append(x)
     
 
 print(*ans)
