@@ -17,7 +17,7 @@ arr[0][0]='A'
 for i in range(1,n*m):
     rr=r+dr[cur_dir]
     cc=c+dc[cur_dir]
-    if rr<0 or rr>=n or cc<0 or cc>=n or arr[rr][cc]!=0:
+    if rr<0 or rr>=n or cc<0 or cc>=m or arr[rr][cc]!=0:
         cur_dir=(cur_dir+1)%4
     r=r+dr[cur_dir]
     c=c+dc[cur_dir]
