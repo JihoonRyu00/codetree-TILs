@@ -1,6 +1,5 @@
 n, m = map(int, input().split())
 arr=[[0]*m for _ in range(n)]
-
 # Please write your code here.
 
 # A 65 Z 90
@@ -21,7 +20,7 @@ for i in range(1,n*m):
         cur_dir=(cur_dir+1)%4
     r=r+dr[cur_dir]
     c=c+dc[cur_dir]
-    arr[r][c]=chr(i%34+65)
+    arr[r][c]=chr(i%36+65)
 
 for i in range(n):
     print(*arr[i])
