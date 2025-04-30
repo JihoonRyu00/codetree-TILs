@@ -3,6 +3,7 @@ ans=[]
 while arr:
     if arr[-1]==0:
         ans=[]
+        arr.pop()
     else:
         ans.append(arr.pop())
     # x=arr.pop()
@@ -13,13 +14,3 @@ while arr:
     
 
 print(*ans)
-
-
-# arr=[]
-# for _ in range(10):
-#     x=int(input())
-#     if x==0:
-#         break
-#     arr.append(elem)
-# for i in range(len(arr)-1,-1,-1):
-#     print(arr[i],end=" ")
