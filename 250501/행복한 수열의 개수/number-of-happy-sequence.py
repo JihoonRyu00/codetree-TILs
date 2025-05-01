@@ -3,6 +3,9 @@ grid = [list(map(int, input().split())) for _ in range(n)]
 
 # Please write your code here.
 happy=0
+if m==1:
+    print(2*n)
+    return
 
 def is_rhappy(r):
     stack=[]
