@@ -13,8 +13,9 @@ left_c=max(c-range_,0)
 
 
 for col in range(left_c,c):
-    for row in range(r,0,-1):
-        grid[row][col]=grid[row-1][col]
+    if r>0:
+        for row in range(r,0,-1):
+            grid[row][col]=grid[row-1][col]
     grid[0][col]=0
 
 
@@ -28,8 +29,9 @@ for row in range(down_r,-1,-1):
 
 if c<n-1:
     for col in range(c+1,right_c+1):
-        for row in range(r,0,-1):
-            grid[row][col]=grid[row-1][col]
+        if r>0:
+            for row in range(r,0,-1):
+                grid[row][col]=grid[row-1][col]
     grid[0][col]=0
 
 for i in range(n):
