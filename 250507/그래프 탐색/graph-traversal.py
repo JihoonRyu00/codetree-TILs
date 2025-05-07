@@ -4,7 +4,7 @@ edges = [tuple(map(int, input().split())) for _ in range(m)]
 # Please write your code here.
 visit=[False]*(n+1)
 
-edge_list={}
+edge_list={i:[] for i in range(1,n+1)}
 for edge in edges:
     if edge[0] in edge_list:
         edge_list[edge[0]].append(edge[1])
